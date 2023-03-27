@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.leftHeader img {
+    width: 30vh;
+    height: 15vh;
+}
+
+.middleHeader, .rightHeader{
+    font-size: 8px;
+
+}
+
