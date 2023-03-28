@@ -2,7 +2,7 @@ import React from "react";
 
 const Icon = ({icon}) => {
     return (
-        <i class={icon}></i>
+        <i className={icon}></i>
     )
 }
 

@@ -11,10 +11,12 @@ const Header = () => {
             <img src={logoUrl} alt="Airbnb"/>
         </div>
         <div className="middleHeader">
-                Anywhere   
-                Any week
-                Add guest
-            <Icon icon="fa-solid fa-magnifying-glass"/>
+                <div className="bolded">Anywhere</div>   
+                <div className="bolded">Any week</div>
+                <div className="fainted">Add guest</div>
+                <div className="magnifyingGlass">
+                    <Icon icon="fa-solid fa-magnifying-glass"/>
+                </div>
         </div>
         <div className="rightHeader">
                 Airbnb your home

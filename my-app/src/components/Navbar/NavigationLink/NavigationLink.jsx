@@ -4,7 +4,7 @@ const NavigationLink = ({text, icon, linkClass}) => {
     return (
         <div className={linkClass}>
              <div className="navLink">
-                <img src={icon} />
+                <i className={icon} />
             </div>
             <div className="navLinkText">
                 {text}

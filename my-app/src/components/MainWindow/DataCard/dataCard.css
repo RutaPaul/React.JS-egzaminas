@@ -1,0 +1,22 @@
+.DataCardImage {
+    width: 100%;
+    height: 70%;
+}
+
+.DataCardImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.DataCardInfo {
+    height: 30%;
+}
+
+.DataCard {
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+    cursor:pointer;
+}
