@@ -16,12 +16,15 @@ const MainWindow = (props) => {
 
 
     useEffect(()=>{
-        getFlatsList();
+        if(props.type === "flats"){
+            getFlatsList();
+        }
     })
 
     return(
         <div className="mainWindow">
             {
+                props.type ?
                 flats ? flats.map(el => (
                     <DataCard 
                         id = {el.id}
@@ -33,6 +36,7 @@ const MainWindow = (props) => {
                         lng = {el.lng}
                     />
                 )) : <div>No listings available</div>
+                : ""
             }
         </div>
     )

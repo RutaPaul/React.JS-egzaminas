@@ -1,8 +1,14 @@
 import React from "react";
 
-const NavigationLink = ({text, icon, linkClass}) => {
+const NavigationLink = ({text, icon, linkClass, setType}) => {
     return (
-        <div className={linkClass}>
+        <div className={linkClass} onClick={()=>{
+            if(text == "Castles"){
+                setType("flats");
+            } else {
+                setType("NONE");
+            }
+        }} >
              <div className="navLink">
                 <i className={icon} />
             </div>
@@ -10,6 +16,7 @@ const NavigationLink = ({text, icon, linkClass}) => {
                 {text}
             </div>
         </div>
+        
     )
 }
 
