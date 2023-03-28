@@ -19,10 +19,16 @@ const Header = () => {
                 </div>
         </div>
         <div className="rightHeader">
+            <div>
                 Airbnb your home
+            </div>
+            <div>
                 <Icon icon="fa-solid fa-globe"/>
+            </div>
+            <div className="profile">
                 <Icon icon="fa-solid fa-bars"/>
                 <Icon icon="fa-solid fa-circle-user"/>
+            </div>
         </div>
     </div>
     </>

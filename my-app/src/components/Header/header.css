@@ -22,7 +22,7 @@
 .middleHeader div {
     height: 100%;
     width: 25%;
-    padding-top: 1%;
+    padding-top: 2.2%;
     margin-left: 5%;
 }
 
@@ -37,10 +37,14 @@
 .middleHeader .magnifyingGlass {
     width: 10%;
     margin-left: 0%;
+    padding-top: 1%;
 }
 
 .middleHeader .magnifyingGlass i {
-    padding-top:8%;
+    color: white;
+    background-color: rgb(231, 68, 163);
+    padding: 20% 20% 20% 20%;
+    border-radius: 50%;
 }
 
 .middleHeader {
@@ -51,11 +55,27 @@
     border-radius: 5px;
     border-width: 1px;
     width: 20%;
-}
-
-.middleHeader, .rightHeader{
-    height: 65%;
+    height: 35%;
     font-size: 8px;
     cursor: pointer;
 }
 
+.rightHeader{
+    display: flex;
+    height: 65%;
+    font-size: 8px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.rightHeader div {
+    margin-right:5%;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.rightHeader .profile {
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    border-width: 1px;
+}
