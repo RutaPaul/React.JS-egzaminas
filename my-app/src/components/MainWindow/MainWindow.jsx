@@ -16,15 +16,18 @@ const MainWindow = (props) => {
 
 
     useEffect(()=>{
-        if(props.type === "flats"){
+        if(props.type === "Castles"){
             getFlatsList();
+        }
+        else {
+            setFlats(null);
         }
     })
 
     return(
         <div className="mainWindow">
             {
-                props.type ?
+                props.type == "initialType" ? <div> Welcome to air bnb </div> :
                 flats ? flats.map(el => (
                     <DataCard 
                         id = {el.id}
@@ -36,7 +39,6 @@ const MainWindow = (props) => {
                         lng = {el.lng}
                     />
                 )) : <div>No listings available</div>
-                : ""
             }
         </div>
     )

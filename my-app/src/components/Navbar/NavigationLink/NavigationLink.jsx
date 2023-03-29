@@ -1,15 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import "./navigationlink.css";
 
-const NavigationLink = ({text, icon, linkClass, setType}) => {
+const NavigationLink = ({text, icon, divClass, setType, isHidden}) => {
+
     return (
-        <div className={linkClass} onClick={()=>{
-            if(text == "Castles"){
-                setType("flats");
-            } else {
-                setType("NONE");
-            }
-        }} >
-             <div className="navLink">
+        isHidden ? "" :
+        <div className={divClass} onClick={()=>{
+            setType(text);
+            }} >
+             <div className="navLinkIcon">
                 <i className={icon} />
             </div>
             <div className="navLinkText">
