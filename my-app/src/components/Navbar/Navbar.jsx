@@ -107,8 +107,8 @@ const Navbar = (props) => {
             <NavigationLink text="RIGHT" icon="fa-solid fa-circle-arrow-right" divClass="navLink" setType={props.setType} isHidden={false} 
                 setVisiblePositions={setVisiblePositions} visiblePositions={visiblePositions} allPositions={allPositions}
             />
-
         </div>
+        
     )
 }
 
