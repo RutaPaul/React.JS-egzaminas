@@ -5,8 +5,6 @@ import './mainWindow.css';
 
 const MainWindow = (props) => {
 
-    const [flats, setFlats] = useState(null);
-
     const getFlatsList = async () =>{
         let data = await getFlats();
         if(data){
@@ -14,20 +12,26 @@ const MainWindow = (props) => {
         }
     }
 
+    const [flats, setFlats] = useState(null);
 
     useEffect(()=>{
-        if(props.type === "Castles"){
+        if(props.type === "initialType"){
             getFlatsList();
+        }else if(props.type === "Castles"){
+            if(flats)
+                setFlats([flats[0],flats[1]])
+            else 
+                getFlatsList();
         }
         else {
             setFlats(null);
         }
+        
     })
 
     return(
         <div className="mainWindow">
             {
-                props.type == "initialType" ? <div> Welcome to air bnb </div> :
                 flats ? flats.map(el => (
                     <DataCard 
                         id = {el.id}
