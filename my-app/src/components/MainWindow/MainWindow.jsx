@@ -11,7 +11,7 @@ const MainWindow = (props) => {
             setFlats(data);
         }
     }
-
+    
     const [flats, setFlats] = useState(null);
 
     useEffect(()=>{
@@ -46,11 +46,6 @@ const MainWindow = (props) => {
             }
         </div>
     )
-
-
-
  }
-
-
 
 export default MainWindow;

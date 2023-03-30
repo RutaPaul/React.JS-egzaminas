@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./navigationlink.css";
 
 const NavigationLink = ({text, icon, divClass, setType, isHidden, setVisiblePositions, visiblePositions, allPositions}) => {
@@ -7,31 +7,30 @@ const NavigationLink = ({text, icon, divClass, setType, isHidden, setVisiblePosi
         isHidden ? "" :
         <div className={divClass} onClick={()=>{
             switch(text){
-                case "LEFT" :
-                    if(visiblePositions[0] == allPositions[0]) return;
-                    visiblePositions.pop();
-                    visiblePositions.unshift(visiblePositions[0]-1);
-                    setVisiblePositions(FixVisibleArray(allPositions,visiblePositions));
+                    case "LEFT" :
+                        if(visiblePositions[0] == allPositions[0]) return;
+                        visiblePositions.pop();
+                        visiblePositions.unshift(visiblePositions[0]-1);
+                        setVisiblePositions(FixVisibleArray(allPositions,visiblePositions));
                     break;
-                case "RIGHT" :
-                    if(visiblePositions[visiblePositions.length-1] == allPositions[allPositions.length-1]) return;
-                    visiblePositions.shift();
-                    visiblePositions.push(visiblePositions[visiblePositions.length-1]+1);
-                    setVisiblePositions(FixVisibleArray(allPositions,visiblePositions));
+                    case "RIGHT" :
+                        if(visiblePositions[visiblePositions.length-1] == allPositions[allPositions.length-1]) return;
+                        visiblePositions.shift();
+                        visiblePositions.push(visiblePositions[visiblePositions.length-1]+1);
+                        setVisiblePositions(FixVisibleArray(allPositions,visiblePositions));
                     break;
-                default :
-                    setType(text)
+                    default :
+                        setType(text)
                     break;
-            }
-            }} >
-             <div className="navLinkIcon">
+                }
+            }}>
+            <div className="navLinkIcon">
                 <i className={icon} />
             </div>
             <div className="navLinkText">
                 {text == "LEFT" ? "" : text == "RIGHT" ? "" : text }
             </div>
         </div>
-        
     )
 }
 

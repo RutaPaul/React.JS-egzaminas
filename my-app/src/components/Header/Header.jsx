@@ -1,19 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import logoUrl from "../Icon/Airbnb.jpg";
 import Icon from "../Icon";
+import { getHomePageUrl } from '../../utils/api';
 import "./header.css";
 
 const Header = () => {
-
     const [profileVisible, setProfileVisibility] = useState(false); 
-    useEffect(()=>{
-        
-    })
     return(
         <>
         <div className="header">
             <div className="leftHeader"> 
-                <img src={logoUrl} alt="Airbnb"/>
+                <img src={logoUrl} alt="Airbnb" onClick={()=>{window.location.href = getHomePageUrl()}}/>
             </div>
             <div className="middleHeader">
                     <div className="bolded">Anywhere</div>   

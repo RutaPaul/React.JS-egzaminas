@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import './Main.css';
 import MainWindow from '../../components/MainWindow';
 import Navbar from "../../components/Navbar";
 import Filter from "../../components/Filter";
@@ -9,8 +8,8 @@ function Main() {
   return (
     <>
         <div className='navbarmenu'>
-        <Navbar type={type} setType={setType}/>        
-        <Filter />
+          <Navbar type={type} setType={setType}/>        
+          <Filter />
         </div>
         <MainWindow type={type}/>
     </>

@@ -12,6 +12,11 @@ const getFlats = async () => {
     }
 }
 
+const getHomePageUrl = () => {
+    return "http://localhost:3000/";
+}
+
 export {
-    getFlats
+    getFlats,
+    getHomePageUrl
 }
