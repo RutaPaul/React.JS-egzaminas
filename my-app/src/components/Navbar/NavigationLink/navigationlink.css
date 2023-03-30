@@ -1,0 +1,28 @@
+.navLink {
+    width:2.5rem;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.navLinkActive {
+    border-style:solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 2px;
+    width:2.5rem;
+    min-width: 2.5rem;
+    text-align: center;
+    background-color: rgb(228, 223, 223);
+}
+
+.navLinkIcon {
+    margin:auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navLinkText {
+    margin:auto;
+    text-align: center;
+    cursor: pointer;
+}

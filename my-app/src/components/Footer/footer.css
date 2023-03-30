@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    text-align: left;
+    font-size:7px;
+    padding-left:2.5%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    border-top: solid 2px rgb(206, 206, 206);
+    border-bottom: solid 2px rgb(206, 206, 206);
+}

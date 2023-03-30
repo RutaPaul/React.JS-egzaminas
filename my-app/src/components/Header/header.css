@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.leftHeader {
+    width: 8%;
+    height: 100%;
+    text-align: left;
+}
+
+.leftHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+.middleHeader div {
+    height: 100%;
+    width: 25%;
+    padding-top: 2.2%;
+    margin-left: 5%;
+}
+
+.middleHeader .bolded {
+    font-weight: bold;
+}
+
+.middleHeader .fainted {
+    color:rgb(180, 180, 180);
+}
+
+.middleHeader .magnifyingGlass {
+    width: 10%;
+    margin-left: 0%;
+    padding-top: 1%;
+}
+
+.middleHeader .magnifyingGlass i {
+    color: white;
+    background-color: rgb(231, 68, 163);
+    padding: 20% 20% 20% 20%;
+    border-radius: 50%;
+}
+
+.middleHeader {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    border-width: 1px;
+    width: 20%;
+    height: 54%;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.rightHeader{
+    display: flex;
+    height: 65%;
+    font-size: 8px;
+    width: 20%;
+}
+
+.profile {
+    display: flex;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    border-width: 1px;
+    margin-left:0px;
+    width: 18%;
+    padding-left:5%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.rightHeader div {
+    margin-right:10%;
+    font-weight: bold;
+    margin-top: 4.25%;
+}
+
+
+.profile div {
+    margin-right: 25%;
+}
+
+.profilePanel {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: white;
+}
+.profilePanel div {
+    width: 100%;
+}
